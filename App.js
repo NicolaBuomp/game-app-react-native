@@ -4,7 +4,7 @@ import StartGameScreen from './screens/StartGameScreen'
 
 export default function App() {
   return (
-    <LinearGradient colors={['#ffffff', '#fd0505ff',]} style={styles.rootScreen}>
+    <LinearGradient colors={['#000000ff', '#ffffff']} style={styles.rootScreen}>
       <ImageBackground source={require('./assets/images/background.png')} resizeMode="cover" style={styles.rootScreen} imageStyle={styles.backgroundImage}>
         <StartGameScreen />
       </ImageBackground>
@@ -17,6 +17,6 @@ const styles = StyleSheet.create({
     flex: 1,
   },
   backgroundImage: {
-    opacity: 0.8
+    opacity: 0.5
   }
 })
